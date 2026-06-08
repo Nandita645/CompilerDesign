@@ -1,5 +1,6 @@
 %{
 #include "y.tab.h"
+
 #include <stdlib.h>
 %}
 %%
@@ -18,6 +19,7 @@ return yytext[0];
 printf("Unknown character: %s\n", yytext);
 }
 %%
+
 int yywrap(void)
 {
 return 1;
