@@ -12,6 +12,7 @@ int num;
 %token <num> NUMBER
 /* Non-terminal value types */
 %type <num> expr term factor
+
 %%
 /* Starting symbol */
 input:
@@ -83,9 +84,9 @@ fprintf(stderr, "Error: %s\n", s);
 /* Main function */
 int main(void)
 {
-printf("=================================\n");
+printf("================================\n");
 printf(" Arithmetic Expression Parser\n");
-printf("=================================\n");
+printf("================================\n");
 printf("Examples:\n");
 printf(" 3+4*2\n");
 printf(" (3+4)*2\n");
